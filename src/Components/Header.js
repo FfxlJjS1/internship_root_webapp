@@ -1,56 +1,56 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 import {
   Navbar,
   Nav,
   Container,
   DropdownButton,
   Dropdown
-} from 'react-bootstrap'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+} from "react-bootstrap"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import logo from './logo.png'
+import logo from "./logo.png"
 
-import '../App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "../App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Home = React.lazy(() =>
-  import('oil_tanks_reactapp/Home').catch(props => {
+  import("oil_tanks_reactapp/Home").catch(props => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 const Cistern = React.lazy(() =>
-  import('oil_tanks_reactapp/Cistern').catch(props => {
+  import("oil_tanks_reactapp/Cistern").catch(props => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 const Calculator = React.lazy(() =>
-  import('oil_tanks_reactapp/Calculator').catch(props => {
+  import("oil_tanks_reactapp/Calculator").catch(props => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 const Park = React.lazy(() =>
-  import('oil_tanks_reactapp/Park').catch(props => {
+  import("oil_tanks_reactapp/Park").catch(props => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 const CalculatorV2 = React.lazy(() =>
-  import('oil_tanks_reactapp/CalculatorV2').catch(props => {
+  import("oil_tanks_reactapp/CalculatorV2").catch(props => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 const ParkV2 = React.lazy(() =>
-  import('oil_tanks_reactapp/ParkV2').catch(props => {
+  import("oil_tanks_reactapp/ParkV2").catch(props => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 const StructuralAnalysis = React.lazy(props =>
-  import('oil_tanks_reactapp/StructuralAnalysis').catch(() => {
+  import("oil_tanks_reactapp/StructuralAnalysis").catch(() => {
     return { default: () => <>Component unavailable!</> }
   })
 )
 
 const DisplaySheme = React.lazy(props =>
-  import('display_sheme_reactapp/Home').catch(() => {
+  import("display_sheme_reactapp/Home").catch(() => {
     return { default: () => <>Component unavailable!</> }
   })
 )
@@ -104,14 +104,14 @@ export default class Header extends Component {
 
                 <Nav.Link
                   style={{
-                    color: '#fff',
-                    fontWeight: 'bold',
+                    color: "#fff",
+                    fontWeight: "bold",
                     fontSize: 15,
-                    textAlign: 'left',
-                    border: 'solid',
-                    borderStyle: 'dotted',
-                    margin: '5px',
-                    padding: '3px'
+                    textAlign: "left",
+                    border: "solid",
+                    borderStyle: "dotted",
+                    margin: "5px",
+                    padding: "3px"
                   }}
                   href="/display_sheme_injection"
                 >
@@ -119,14 +119,14 @@ export default class Header extends Component {
                 </Nav.Link>
                 <Nav.Link
                   style={{
-                    color: '#fff',
-                    fontWeight: 'bold',
+                    color: "#fff",
+                    fontWeight: "bold",
                     fontSize: 15,
-                    textAlign: 'left',
-                    border: 'solid',
-                    borderStyle: 'dotted',
-                    margin: '5px',
-                    padding: '3px'
+                    textAlign: "left",
+                    border: "solid",
+                    borderStyle: "dotted",
+                    margin: "5px",
+                    padding: "3px"
                   }}
                   href="/flow_control_diagram"
                 >

@@ -14,12 +14,7 @@
   "devDependencies": {
     "@craco/craco": "^7.0.0",
     "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "eslint": "^8.27.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
+    "@commitlint/config-conventional": "^17.2.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -50,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix"
   }
 }
